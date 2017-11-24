@@ -1,0 +1,39 @@
+body {
+  font-family: "Century Gothic",sans-serif;
+  color: #474030; }
+
+h1 {
+  margin: 20px;
+  padding: 20px; }
+
+svg {
+  border-radius: 3px; }
+
+.node {
+  cursor: pointer; }
+  .node circle {
+    fill: #fff;
+    stroke: #ff4019;
+    stroke-width: 3px;
+    transition: all ease-in 100ms; }
+  .node text {
+    font-size: 14px;
+    max-width: 100px; }
+  .node:hover circle {
+    stroke: #b21e00 !important;
+    fill: #b21e00 !important;
+    transition: all ease-in 200ms; }
+
+.nodeText {
+  font-weight: 700; }
+
+.link {
+  fill: none;
+  stroke: #d9d9d9;
+  stroke-width: 2px; }
+
+.selected {
+  font-weight: bold; }
+
+.not-selected {
+  font-weight: normal; }

@@ -1,0 +1,57 @@
+﻿$sogeti-red:    #ff4019;
+$font-color:    #474030;
+$grey:          lighten(black, 85%);
+
+body {
+    font-family: "Century Gothic",sans-serif;
+    color: $font-color;
+}
+
+h1 {
+    margin: 20px;
+    padding: 20px;
+}
+
+svg {
+    border-radius: 3px;
+}
+
+.node {
+    cursor: pointer;
+
+    circle {
+        fill: #fff;
+        stroke: $sogeti-red;
+        stroke-width: 3px;
+        transition: all ease-in 100ms;
+    }
+
+    text {
+        font-size: 14px;
+        max-width: 100px;
+    }
+
+    &:hover circle {
+        stroke: darken($sogeti-red, 20%) !important;
+        fill: darken($sogeti-red, 20%) !important;
+        transition: all ease-in 200ms;
+    }
+}
+
+.nodeText {
+    font-weight: 700;
+}
+
+.link {
+    fill: none;
+    stroke: $grey;
+    stroke-width: 2px;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.not-selected {
+    font-weight: normal;
+}
